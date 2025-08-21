@@ -36,6 +36,7 @@ import gamedig from "./gamedig/widget";
 import gatus from "./gatus/widget";
 import ghostfolio from "./ghostfolio/widget";
 import gitea from "./gitea/widget";
+import github_release_monitor from "./github-release-monitor/widget";
 import gitlab from "./gitlab/widget";
 import glances from "./glances/widget";
 import gluetun from "./gluetun/widget";
@@ -179,6 +180,7 @@ const widgets = {
   gatus,
   ghostfolio,
   gitea,
+  github_release_monitor,
   gitlab,
   glances,
   gluetun,
