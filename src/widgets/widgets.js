@@ -180,7 +180,7 @@ const widgets = {
   gatus,
   ghostfolio,
   gitea,
-  github_release_monitor,
+  "github-release-monitor": github_release_monitor,
   gitlab,
   glances,
   gluetun,
