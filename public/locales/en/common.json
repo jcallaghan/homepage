@@ -896,6 +896,14 @@
       "pulls": "Pull Requests",
       "repositories": "Repositories"
     },
+    "github-release-monitor": {
+        "repositories": "Repositories",
+        "new": "New Releases",
+        "uptodate": "Up to Date",
+        "status": "Status",
+        "updates": "Updates Available",
+        "status-uptodate": "Up to Date"
+    },
     "stash": {
         "scenes": "Scenes",
         "scenesPlayed": "Scenes Played",

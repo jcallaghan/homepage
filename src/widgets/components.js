@@ -42,6 +42,7 @@ const components = {
   gatus: dynamic(() => import("./gatus/component")),
   ghostfolio: dynamic(() => import("./ghostfolio/component")),
   gitea: dynamic(() => import("./gitea/component")),
+  "github-release-monitor": dynamic(() => import("./github-release-monitor/component")),
   gitlab: dynamic(() => import("./gitlab/component")),
   glances: dynamic(() => import("./glances/component")),
   gluetun: dynamic(() => import("./gluetun/component")),
