@@ -20,7 +20,7 @@ export default function Component({ service }) {
       <Container service={service}>
         <Block label="github-release-monitor.repositories" />
         <Block label="github-release-monitor.new" />
-        <Block label="github-release-monitor.recent" />
+        <Block label="github-release-monitor.uptodate" />
         <Block label="github-release-monitor.status" />
       </Container>
     );
@@ -32,10 +32,10 @@ export default function Component({ service }) {
     <Container service={service}>
       <Block label="github-release-monitor.repositories" value={t("common.number", { value: stats.total })} />
       <Block label="github-release-monitor.new" value={t("common.number", { value: stats.new })} />
-      <Block label="github-release-monitor.recent" value={t("common.number", { value: stats.recent })} />
+      <Block label="github-release-monitor.uptodate" value={t("common.number", { value: stats.uptodate })} />
       <Block 
         label="github-release-monitor.status" 
-        value={stats.new > 0 ? t("github-release-monitor.updates") : t("github-release-monitor.uptodate")} 
+        value={stats.new > 0 ? t("github-release-monitor.updates") : t("github-release-monitor.status-uptodate")} 
       />
     </Container>
   );

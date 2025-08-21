@@ -48,18 +48,14 @@ export default async function githubReleaseMonitorProxyHandler(req, res) {
     // Process the data to provide useful statistics
     const totalRepositories = repositories.length;
     const newReleases = repositories.filter((repo) => repo.isNew).length;
-    const recentlyUpdated = repositories.filter((repo) => {
-      // Consider repositories updated in the last 7 days as "recent"
-      // Since we don't have timestamps, we'll just use the isNew flag as a proxy
-      return repo.isNew;
-    }).length;
+    const upToDate = repositories.filter((repo) => !repo.isNew).length;
 
     const processedData = {
       repositories,
       stats: {
         total: totalRepositories,
         new: newReleases,
-        recent: recentlyUpdated,
+        uptodate: upToDate,
       },
     };
 
